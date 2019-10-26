@@ -1,0 +1,22 @@
+{% extends 'layout.html'%}
+
+{% block title %}Delete {{ category.name }}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row" style="margin-top: 35px;">
+                <h1 style="font-weight: bold; color: deepskyblue">Delete Category</h1>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                    <h3 style="color: mediumseagreen">Are you sure you want to delete {{category.name}}?</h3>
+                </div>
+            <div class="row" style="margin-top: 10px;">
+                <form method="POST" action="{{ url_for('delete_league', league_id=league.id) }}">
+                    <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt text-and-icon"></i>Delete</button>
+                    <a href="{{ url_for('leagues') }}"><button type="button" class="btn btn-success"><i class="fas fa-times text-and-icon"></i>Cancel</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Vollkorn', sans-serif;
+    position: relative;
+}
+body{
+    
+}
+.navbar-inverse{
+    background: rgba(0,0,0,0.5); 
+}
+.nav li{
+    color: #fff;
+    margin-right: 35px;
+    font-size: 17px;
+    padding: 10px 0;
+}
+.nav li:first-child{
+    margin-left: 35px;
+}
+.nav .logo{
+    margin-top: 20px;
+}
+#promise{
+    padding-top: 100px;   
+}
+#mycarousel{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.carousel-inner .item img{
+    height: 400px; 
+    margin: 0 auto;
+}
+.carousel-caption{
+    position: relative;
+    left: auto;
+    right: auto;
+    height: 200px;
+}
+@media (max-width:768px){
+    .carousel-inner .item img{
+        height: 250px;   
+    }
+    .carousel-inner h2{
+        font-size: 23px;   
+    }
+}
+@media (max-width:400px){
+    .carousel-inner .item img{
+        height: 200px;   
+    }
+    .carousel-inner h2{
+        font-size: 17px;   
+    }
+    .navbar-brand{
+        font-size: 12px;   
+    }
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: grey;
+    font-size: 15px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+@media (min-width: 480px) and (max-width: 768px){
+    .bodyimage{
+        height: 70px;   
+    }
+    .nav li:first-child{
+        margin-left: 0;
+    }
+    .footer{
+        position: relative;
+        margin-top: 20px
+    }
+}
+@media (max-width: 480px){
+    .bodyimage{
+        height: 70px;   
+    }
+    .nav li:first-child{
+        margin-left: 0;
+    }
+    .footer{
+        position: relative;
+        margin-top: 20px
+    }
+}
