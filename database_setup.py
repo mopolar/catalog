@@ -61,5 +61,5 @@ class Club(Base):
             'user_id': self.user_id
         }
 
-engine = create_engine('sqlite:///database.db')
+engine = create_engine('engine = create_engine('postgresql://catalog:polar@localhost/catalog')')
 Base.metadata.create_all(engine)

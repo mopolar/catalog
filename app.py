@@ -24,7 +24,7 @@ CLIENT_ID = json.loads(
     open('client_secrets.json', 'r').read())['web']['client_id']
 
 # Connect to the database and create a database session.
-engine = create_engine('sqlite:///database.db',
+engine = create_engine('engine = create_engine('postgresql://catalog:polar@localhost/catalog')',
                        connect_args={'check_same_thread': False})
 
 # Bind the above engine to a session.
